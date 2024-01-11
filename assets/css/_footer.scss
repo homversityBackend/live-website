@@ -1,0 +1,193 @@
+// Footer section Start ****************
+footer {
+  .find_locations {
+    background: #f7f6f2;
+    padding: 60px 0 80px;
+  }
+
+  h2 {
+    color: var(--darkText);
+    font-family: Inter;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28.8px; /* 120% */
+    letter-spacing: -0.72px;
+    text-align: center;
+    margin: 0 auto 50px;
+  }
+
+  .nav-tabs {
+    column-gap: 36px;
+    margin-bottom: 62px;
+    align-items: center;
+
+    a.btn_plain {
+      color: #3d5fea;
+      font-family: Inter;
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28.8px; /* 160% */
+      letter-spacing: -0.54px;
+      text-decoration-line: underline;
+      margin-bottom: 6px;
+    }
+  }
+
+  .nav-link {
+    color: #4b6475;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28.8px; /* 144% */
+    letter-spacing: -0.6px;
+    padding: 10px 0 20px;
+    border: 0 !important;
+
+    &:hover {
+      border: 0;
+      color: var(--primaryColor);
+    }
+  }
+  .nav-tabs .nav-link.active {
+    background-color: transparent;
+    position: relative;
+
+    &::after {
+      content: "";
+      left: 0;
+      bottom: 0;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      border-radius: 4px 4px 0px 0px;
+      background: #3d5fea;
+    }
+  }
+
+  .all_locations {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    p {
+      color: #4b6475;
+      font-family: Inter;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: -0.16px;
+
+      strong {
+        color: var(--darkText);
+        font-weight: 600;
+      }
+    }
+  }
+
+  .main_footer {
+    padding: 80px 0 40px;
+    background: var(--primaryColor);
+  }
+
+  .brand_id {
+    width: 143px;
+    margin-bottom: 60px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .footer_content {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    width: 100%;
+  }
+  a {
+    color: #fff;
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.32px;
+  }
+
+  h4 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.54px;
+    margin-bottom: 20px;
+  }
+
+  .left_side {
+    display: flex;
+    column-gap: 100px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  .social {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 100px;
+
+    a {
+      background: hsla(0, 0%, 100%, 0.1);
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      transition: 0.3s;
+
+      svg {
+        transition: 0.3s;
+      }
+
+      &:hover {
+        background: hsla(0, 0%, 100%, 1);
+
+        svg {
+          fill: var(--primaryColor);
+        }
+      }
+    }
+  }
+
+  .store_btn {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    a {
+      width: 130px;
+    }
+  }
+
+  .copyright {
+    color: #fff;
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.32px;
+    text-align: center;
+    margin-top: 80px;
+  }
+}
+// Footer section End ****************

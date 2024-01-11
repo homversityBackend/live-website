@@ -1,0 +1,347 @@
+.dashboard_main .d_inner_content {
+  padding: 40px 40px 0;
+}
+
+.d_small_cards,
+.d_medium_cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.d_small_card,
+.d_medium_card {
+  padding: 16px;
+  gap: 10px;
+  border-radius: 12px;
+  background: #fff;
+
+  h4 {
+    color: var(--darkText);
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 133.333% */
+    letter-spacing: -0.3px;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    color: var(--darkText);
+    font-family: Inter;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px; /* 120% */
+    letter-spacing: -1.2px;
+    margin-bottom: 16px;
+
+    span {
+      color: #acb5c5;
+      font-family: Inter;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 32px; /* 160% */
+      letter-spacing: -0.6px;
+    }
+  }
+
+  h5 {
+    color: #6f7386;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.28px;
+
+    .green {
+      font-weight: 600;
+      color: #1ea83c;
+    }
+
+    .red {
+      font-weight: 600;
+      color: #f44157;
+    }
+  }
+}
+
+.d_medium_cards {
+  grid-template-columns: 1fr 2fr;
+}
+
+.d_medium_card {
+  .d_card_head {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  h4 {
+    font-size: 1.8rem;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.36px;
+    margin-bottom: 0;
+  }
+
+  .form-select {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    width: fit-content;
+    padding: 6px;
+    padding-right: 26px;
+    color: #6f7386;
+
+    &:hover,
+    &:focus {
+      border: 0 !important;
+    }
+  }
+
+  .info_box {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px;
+    gap: 8px;
+    border-radius: 8px;
+    background: rgba(62, 81, 255, 0.04);
+    margin-top: 28px;
+
+    p {
+      color: var(--darkText);
+      font-family: Inter;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 142.857% */
+      letter-spacing: -0.28px;
+
+      span {
+        font-weight: 600;
+        color: var(--primaryColor);
+      }
+    }
+  }
+}
+
+.blue_card {
+  border-radius: 12px;
+  background: linear-gradient(180deg, #3e52fe 0%, #2133cd 100%);
+
+  position: relative;
+  isolation: isolate;
+  .bottom_right,
+  .top_right {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+  .top_right {
+    top: 0;
+  }
+  .bottom_right {
+    bottom: 0;
+    z-index: 2;
+  }
+
+  .content_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .left_image {
+    height: 249px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .right_box {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 249px;
+    border-radius: 12px;
+    max-width: 248px;
+    padding: 20px;
+  }
+
+  .health_logo {
+    width: 100%;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #e3e8ef;
+    margin-bottom: 16px;
+  }
+
+  p.desc {
+    color: #4b6475;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16.4px; /* 136.667% */
+    letter-spacing: -0.24px;
+    padding-bottom: 16px;
+    border-bottom: 1px dashed #e3e8ef;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1ea83c;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+  }
+  .info {
+    width: 35%;
+  }
+  .big_title {
+    padding-bottom: 16px;
+    border-bottom: 1px dashed #949ffe;
+    margin-bottom: 12px;
+    width: fit-content;
+  }
+  p {
+    color: #eceeff;
+    font-family: Inter;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 12px; /* 92.308% */
+    margin-bottom: 4px;
+  }
+
+  .banner_btn {
+    border-radius: 8px;
+    border: 1px solid #afb7fa;
+    background: #fff;
+    padding: 8px 16px;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25),
+      0px 4px 6px 0px rgba(142, 158, 167, 0.08) inset;
+    display: inline-block;
+    margin-top: 16px;
+
+    color: #3e52ff;
+    font-family: Inter;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.24px;
+  }
+}
+
+.d_medium_cards.col_3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.conversion_rate {
+  .desc {
+    color: #6f7386;
+    font-family: Inter;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18.4px; /* 141.538% */
+    letter-spacing: -0.195px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+  }
+}
+
+.form_select.blue {
+  // display: flex;
+  padding: 4px 12px;
+  padding-right: 20px;
+  // align-items: flex-start;
+  border-radius: 30px;
+  background: #f7f8ff;
+  color: var(--primaryColor);
+  font-family: Inter;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 153.846% */
+  margin-bottom: 20px;
+  outline: 0;
+  border: 0;
+}
+
+.counter {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 20px;
+
+  h2 {
+    margin-bottom: 0;
+    font-size: 3.6rem;
+  }
+
+  p {
+    color: #6f7386;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.28px;
+  }
+}
+
+.d_inner_head {
+  .btn_primary {
+    border-radius: 8px;
+  }
+}
+
+.d_left {
+  #pills-tab {
+    display: flex;
+    gap: 8px;
+
+    .nav-link {
+      display: flex;
+      padding: 10px 12px;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      border-radius: 8px;
+      background: #f8f9fa;
+      color: var(--darkText);
+      font-family: Inter;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 16px; /* 142.857% */
+      letter-spacing: -0.28px;
+    }
+
+    .nav-link.active {
+      background: #dfeeff;
+      color: var(--darkText);
+    }
+  }
+}
+
+#booking_chart * {
+  font-size: 100%;
+}
+
+// Input ****************************

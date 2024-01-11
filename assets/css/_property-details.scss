@@ -1,0 +1,698 @@
+#navbar-example2.navbar {
+  position: sticky;
+  top: 71px;
+  z-index: 999;
+}
+hr {
+  color: #e8e9eb;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  opacity: 1;
+}
+.splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.splide__slide {
+  opacity: 0.6;
+}
+
+.splide__slide.is-active {
+  opacity: 1;
+}
+
+.property_details {
+  .details_link_path {
+    margin: 40px 0 28px 0;
+    display: flex;
+    justify-content: space-between;
+    .share {
+      // Share
+      color: #32ab4c;
+      font-size: 1.8rem;
+      font-family: Inter;
+      font-weight: 500;
+      line-height: 19.2px;
+      word-wrap: break-word;
+    }
+  }
+  .details_content {
+    width: 100%;
+    display: flex;
+    column-gap: 48px;
+
+    .left_side {
+      width: 100%;
+      max-width: 757px;
+
+      .red_coupon {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+
+        p {
+          color: #f44157;
+          font-family: Inter;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 18px; /* 120% */
+          letter-spacing: -0.15px;
+        }
+      }
+      .image_gallery {
+        .image {
+          overflow: hidden;
+          border-radius: 12px;
+          object-fit: cover;
+        }
+        .active {
+          width: 100%;
+        }
+        .image_gallery_slider {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          column-gap: 20px;
+          margin-top: 20px;
+          margin-bottom: 32px;
+          .image {
+            height: 152px;
+            position: relative;
+            cursor: pointer;
+            .load_more {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: white;
+              font-size: 2.4rem;
+              font-family: Inter;
+              font-weight: 700;
+              line-height: 28.8px;
+              word-wrap: break-word;
+              padding: 17px 10px;
+              border-radius: 50%;
+              border-radius: 40px;
+              background: rgba(0, 0, 0, 0.4);
+              backdrop-filter: blur(17px);
+            }
+          }
+        }
+        img {
+          width: 100%;
+        }
+      }
+
+      .details_tabs {
+        width: 100%;
+        .scrollspy-example {
+          width: 100%;
+        }
+        .scroll_content {
+          width: 100%;
+        }
+        .navbar {
+          background: #fff;
+          margin-bottom: 60px;
+          border-bottom: 1px solid #e8e9eb;
+          padding: 0;
+
+          ul {
+            column-gap: 68px;
+          }
+          .nav-link {
+            color: #495a63;
+            font-size: 1.6rem;
+            font-family: Inter;
+            font-weight: 500;
+            padding: 20px 0;
+            background: none;
+            position: relative;
+
+            &::after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 3px;
+              background: var(--primaryColor);
+              bottom: 0;
+              left: 0;
+              border-radius: 4px 4px 0px 0px;
+              opacity: 0;
+            }
+          }
+          .nav-link.active {
+            color: var(--primaryColor);
+
+            &::after {
+              opacity: 1;
+            }
+          }
+        }
+
+        .overview.scroll_content {
+          .heading {
+            display: flex;
+            justify-content: space-between;
+
+            .left {
+              display: flex;
+              flex-direction: column;
+              gap: 12px;
+              h4 {
+                // Angela Flora Royal Girls Home
+                color: #3a3b4f;
+                font-size: 2.4rem;
+                font-family: Inter;
+                font-weight: 600;
+                line-height: 28.8px;
+                word-wrap: break-word;
+                margin-bottom: 0;
+              }
+              .location {
+                display: flex;
+                align-items: center;
+
+                .pin_icon {
+                  width: 18px;
+                  height: 18px;
+                }
+                span {
+                  // Arya Nagar
+                  color: #3a3b4f;
+                  font-size: 2rem;
+                  font-family: Inter;
+                  font-weight: 400;
+                  line-height: 19.2px;
+                  word-wrap: break-word;
+                }
+              }
+            }
+            .right .btn_h {
+              border-radius: 50%;
+              width: 44px;
+              height: 44px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 1px solid #e8e9eb;
+            }
+          }
+          .info_sec {
+            width: 100%;
+            margin-top: 32px;
+            margin-bottom: 40px;
+            display: flex;
+            column-gap: 28px;
+            .rating_group {
+              cursor: pointer;
+            }
+            .info {
+              display: flex;
+              align-items: center;
+              column-gap: 8px;
+              span {
+                // 4.4 Rating
+                color: #4b6475;
+                font-size: 1.8rem;
+                font-family: Inter;
+                font-weight: 400;
+                line-height: 19.2px;
+                word-wrap: break-word;
+                position: relative;
+              }
+
+              .rating::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 6px;
+                background: transparent;
+                border-bottom: 1px dashed #3d5fea;
+                top: 100%;
+                left: 0;
+              }
+            }
+          }
+          .schedule_sec {
+            display: flex;
+            align-items: center;
+            padding: 24px 20px;
+            border-radius: 16px;
+            margin-bottom: 40px;
+            justify-content: space-between;
+            column-gap: 35px;
+            border-radius: 16px;
+            border: 1px solid #e8e9eb;
+            background: #f7f7f8;
+            p {
+              color: #4b6475;
+              font-size: 1.6rem;
+              font-family: Inter;
+              font-weight: 500;
+              line-height: 26px;
+              word-wrap: break-word;
+            }
+            a {
+              display: inline-block;
+              background-color: #f44157;
+              min-width: 155px;
+              border-color: #f44157;
+              color: #fff;
+              text-align: center;
+              height: fit-content;
+            }
+          }
+        }
+
+        h4 {
+          // Angela Flora Royal Girls Home
+          color: var(--darkText);
+          font-size: 2.4rem;
+          font-family: Inter;
+          font-weight: 600;
+          line-height: 28.8px;
+          word-wrap: break-word;
+          margin-bottom: 24px;
+        }
+        .amenities.scroll_content {
+          display: flex;
+          flex-direction: column;
+
+          .info_sec {
+            border-radius: 16px;
+            border: 1px solid #e8e9eb;
+
+            .nav {
+              padding: 52px 20px 52px 24px;
+              display: flex;
+              flex-direction: column;
+              row-gap: 28px;
+              align-items: flex-start;
+              border-radius: 16px 0px 0px 16px;
+              // border: 1px solid #e8e9eb;
+              background: #f7f7f8;
+
+              .nav-link {
+                font-size: 1.6rem;
+                font-family: Inter;
+                font-weight: 500;
+                line-height: 24px;
+                word-wrap: break-word;
+                color: #4b6475;
+                display: flex;
+                column-gap: 8px;
+                transition: 0.3s;
+                align-items: center;
+
+                svg {
+                  transition: 0.3s;
+                }
+
+                &:hover {
+                  color: var(--primaryColor);
+                }
+              }
+              .active {
+                background-color: transparent !important;
+                color: var(--primaryColor);
+                .icon svg {
+                  stroke: var(--primaryColor);
+                }
+              }
+              #v-pills-Food-tab.active {
+                svg {
+                  stroke: none;
+                  fill: var(--primaryColor);
+                }
+              }
+
+              margin: 0 !important;
+              width: 100%;
+              max-width: 231px;
+            }
+            .tab-content {
+              padding: 52px 20px 55px;
+              min-height: 544px;
+              width: 100%;
+
+              .tab_content {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 30px;
+                row-gap: 40px;
+
+                .food_item {
+                  display: flex;
+                  align-items: center;
+                  gap: 8px;
+
+                  color: var(--darkText);
+                  text-align: left;
+                  font-family: Inter;
+                  font-size: 1.6rem;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  letter-spacing: -0.48px;
+
+                  .icon {
+                    width: 30px;
+                    height: 30px;
+                    min-width: 30px;
+
+                    img {
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .rules {
+          .info_sec {
+            border-radius: 16px;
+            border: 1px solid #e8e9eb;
+            background: #fff;
+            overflow: hidden;
+            padding: 8px 0;
+          }
+          .rules_item {
+            display: flex;
+            width: 100%;
+            padding: 16px 24px;
+            gap: 8px;
+
+            color: var(--darkText);
+            font-family: Inter;
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 19.2px; /* 120% */
+            letter-spacing: -0.32px;
+
+            &:nth-of-type(even) {
+              background: #f7f7f8;
+            }
+          }
+
+          .query {
+            display: flex;
+            align-items: center;
+            padding: 24px 20px;
+            border-radius: 16px;
+            margin-bottom: 40px;
+            justify-content: space-between;
+            column-gap: 35px;
+            border-radius: 16px;
+            border: 1px solid #e8e9eb;
+            background: #f7f7f8;
+            p {
+              color: #4b6475;
+              font-size: 1.6rem;
+              font-family: Inter;
+              font-weight: 500;
+              line-height: 26px;
+              word-wrap: break-word;
+            }
+            a {
+              display: inline-block;
+              background-color: var(--primaryColor);
+              min-width: 155px;
+              border-color: var(--primaryColor);
+              color: #fff;
+              text-align: center;
+              height: fit-content;
+            }
+          }
+
+          .map_location {
+            iframe {
+              width: 100%;
+              border-radius: 16px;
+              border: 1px solid #e8e9eb;
+              overflow: hidden;
+            }
+          }
+        }
+
+        .review {
+          .image {
+            width: 24px;
+            height: 24px;
+          }
+
+          .item {
+            border-radius: 16px;
+            background: #f7f7f8;
+            display: flex;
+            padding: 21px 25px;
+            flex-direction: column;
+            gap: 10px;
+
+            .name {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+
+              h5 {
+                color: var(--darkText);
+                font-family: Inter;
+                font-size: 1.8rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 32px; /* 177.778% */
+                letter-spacing: -0.36px;
+              }
+            }
+
+            p {
+              color: #4b6475;
+              font-family: Inter;
+              font-size: 1.6rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 28px; /* 175% */
+              letter-spacing: -0.48px;
+            }
+          }
+          .owl-nav {
+            text-align: right;
+          }
+
+          button.owl-next,
+          button.owl-prev {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 1px solid hsla(220, 7%, 92%, 1);
+
+            span {
+              line-height: 29px;
+              font-size: 20px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+    .right_side {
+      width: 100%;
+      max-width: 435px;
+
+      .refund {
+        margin-top: 20px;
+        display: flex;
+        column-gap: 16px;
+        border: 1px solid #afafaf;
+        padding: 24px 20px;
+        border-radius: 16px;
+        .info {
+          display: flex;
+          flex-direction: column;
+          row-gap: 20px;
+          p {
+            strong {
+              color: #3a3b4f;
+            }
+            color: #4b6475;
+          }
+          a {
+            padding: 10px;
+            background-color: #f5f5f5;
+            text-align: center;
+            border-radius: 8px;
+            // Reserve Now For ₹999
+            color: #3a3b4f;
+            font-size: 1.6rem;
+            font-family: Inter;
+            font-weight: 500;
+            line-height: 19.2px;
+            word-wrap: break-word;
+          }
+        }
+      }
+      height: fit-content;
+      position: sticky;
+      top: 86px;
+    }
+  }
+
+  .large_hr {
+    margin: 70px 0 60px;
+  }
+
+  .similar_prop {
+    margin-bottom: 100px;
+    h2 {
+      margin-bottom: 28px;
+      color: var(--darkText);
+      font-family: Inter;
+      font-size: 2.4rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 28.8px; /* 120% */
+      letter-spacing: -0.72px;
+    }
+  }
+
+  .for_mobile.sharing_type {
+    display: none;
+  }
+
+  .sharing_type {
+    width: 100%;
+    padding: 32px 20px 20px 20px;
+
+    h4 {
+      // Select Sharing Type
+      color: #3a3b4f;
+      font-size: 2rem;
+      font-family: Inter;
+      font-weight: 600;
+      line-height: 21.6px;
+      word-wrap: break-word;
+      margin-bottom: 16px;
+    }
+    filter: drop-shadow(0px 8px 25px rgba(76, 91, 109, 0.15));
+
+    border-radius: 16px;
+    background-color: #ffffff;
+
+    hr {
+      margin: 16px 0;
+      width: 100%;
+      color: #e8e9eb;
+    }
+    .coupon {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 12px;
+      border-radius: 38px;
+      border: 1px dashed #1ea83c;
+      background: #ebfff0;
+
+      p {
+        color: var(--darkText);
+        // text-align: center;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.42px;
+      }
+    }
+    .price_select {
+      .tbody {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-top: 4px;
+      }
+      .thead {
+        border-radius: 6px;
+        background: #f1faff;
+        padding: 2px 0px;
+
+        color: #495a63;
+        font-family: Inter;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 19.2px; /* 120% */
+        letter-spacing: -0.32px;
+      }
+      .thead,
+      .tr {
+        display: flex;
+
+        .td,
+        .th {
+          width: 100%;
+          padding: 10px 20px;
+          &:not(:first-child) {
+            max-width: 117px;
+          }
+        }
+      }
+
+      .tr {
+        gap: 4px;
+      }
+
+      .td {
+        padding: 10px 20px;
+        color: var(--darkText);
+        text-align: center;
+        font-family: Inter;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28.8px; /* 180% */
+        letter-spacing: -0.48px;
+        text-align: left;
+
+        border-radius: 8px;
+        background: rgba(249, 249, 249, 0.6);
+      }
+
+      .price_td {
+        border-radius: 8px;
+        border: 1px solid #f0f0f0;
+        background: #f9f9f9;
+        cursor: pointer;
+        transition: 0.2s;
+        text-align: center;
+
+        &:hover {
+          border: 1px solid rgba(62, 81, 255, 0.1);
+          background: rgba(223, 238, 255, 0.3);
+        }
+      }
+
+      .price_td.selected {
+        border: 1px solid rgba(62, 81, 255, 0.3);
+        background: #dfeeff;
+      }
+    }
+    a {
+      margin-top: 18px;
+      color: white;
+      font-size: 1.6rem;
+      font-family: Inter;
+      font-weight: 500;
+      line-height: 19.2px;
+      border-radius: 8px;
+      box-shadow: 0px 8px 16px 0px rgba(244, 65, 87, 0.1);
+      height: 52px;
+    }
+  }
+}

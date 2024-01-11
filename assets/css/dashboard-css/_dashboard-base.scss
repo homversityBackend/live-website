@@ -1,0 +1,569 @@
+// Dashboard Global Styling ***********************************
+.dashboard_main {
+  background: #f9f9f9;
+}
+
+nav.d_navbar {
+  width: 100%;
+  padding: 14px 40px 14px 28px;
+  border-bottom: 1px solid #f7f6f2;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .d_account_img {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    li {
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      .link_path {
+        padding-left: 10%;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+.d_container {
+  display: flex;
+  width: 100%;
+}
+
+.d_left_menu {
+  width: 100vw;
+  max-width: 240px;
+  padding: 16px;
+  min-height: calc(100vh - 65px);
+  border-right: 1px solid #f7f6f2;
+  background: #fff;
+  height: fit-content;
+  position: sticky;
+  top: 65px;
+
+  a {
+    display: flex;
+    padding: 10px 12px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    color: var(--darkText);
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.14px;
+  }
+
+  a.d_menu_active {
+    background: var(--primaryColor);
+    color: #fff;
+
+    svg {
+      fill: #fff;
+    }
+  }
+  .d_menu_label {
+    color: #acb5c5;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 181.818% */
+    letter-spacing: 0.44px;
+    text-transform: uppercase;
+    padding: 12px 0 8px 12px;
+    margin-top: 12px;
+    border-top: 1px solid #f7f6f2;
+  }
+}
+
+.d_inner_content {
+  width: 100%;
+}
+
+.d_inner_content {
+  padding: 28px 40px 0px 40px;
+}
+
+.d_inner_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+
+  h2 {
+    color: var(--darkText);
+    font-family: Inter;
+    font-size: 2.9rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 110.345% */
+    letter-spacing: -0.87px;
+  }
+}
+
+.d_head_filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px dashed #d6d6d6;
+  margin-bottom: 20px;
+
+  .d_left {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    width: 100%;
+
+    div > a {
+      display: flex;
+      padding: 10px 12px;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      border-radius: 8px;
+      background: #dfeeff;
+
+      color: var(--darkText);
+      font-family: Inter;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 16px; /* 142.857% */
+      letter-spacing: -0.28px;
+
+      .icon {
+        display: flex;
+      }
+    }
+  }
+  .d_search {
+    width: 100%;
+  }
+  .form_group {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+
+    input {
+      width: 100%;
+      padding: 7px 10px 7px 34px;
+      align-items: center;
+      gap: 6px;
+      border-radius: 8px;
+      border: 1px solid #d6d6d6;
+      max-width: unset;
+      color: #acb5c5;
+      font-family: Inter;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 142.857% */
+      letter-spacing: -0.28px;
+
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    .icon {
+      position: absolute;
+      display: flex;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .d_shortby {
+    min-width: 94px;
+  }
+
+  .btn_primary {
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    color: #fff;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px; /* 142.857% */
+    letter-spacing: -0.14px;
+
+    .icon {
+      display: flex;
+    }
+  }
+}
+
+.pad_top {
+  padding-top: 12px;
+}
+
+.all_d_cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.gender {
+  display: flex;
+  padding: 8px 12px 8px 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 40px;
+  width: fit-content;
+
+  font-family: Inter;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px; /* 92.308% */
+  letter-spacing: -0.13px;
+  text-transform: capitalize;
+
+  span {
+    font-weight: 600;
+  }
+}
+
+.male {
+  background: rgba(36, 143, 203, 0.06);
+  color: #248fcb;
+}
+.female {
+  background: rgba(202, 30, 164, 0.06);
+  color: #ca1ea4;
+}
+
+.d_contact_card,
+.d_property_card {
+  width: 100%;
+
+  .img,
+  .image {
+    width: 100%;
+    height: 160px;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+  .live_tag {
+    margin-top: 10px;
+    display: flex;
+    padding: 6px 12px;
+    align-items: center;
+    gap: 4px;
+    border-radius: 28px;
+    background: #3e51ff;
+    width: fit-content;
+    color: #fff;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14.4px; /* 120% */
+    letter-spacing: -0.24px;
+    margin-bottom: 12px;
+  }
+
+  h3 {
+    color: var(--darkText);
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 125% */
+    letter-spacing: -0.32px;
+
+    &:hover {
+      color: var(--primaryColor);
+    }
+  }
+
+  .location {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin: 4px 0 8px;
+    color: #6f7386;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19.2px; /* 160% */
+    letter-spacing: -0.24px;
+
+    .icon {
+      display: flex;
+    }
+  }
+
+  .tag_group {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+
+    .type {
+      display: flex;
+      padding: 8px 12px;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      border-radius: 28px;
+      background: #f3f5ff;
+      color: var(--primaryColor);
+      font-family: Inter;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 12px; /* 142.857% */
+      letter-spacing: -0.28px;
+    }
+  }
+}
+
+td .status {
+  display: flex;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 20px;
+
+  font-family: Inter;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px; /* 92.308% */
+  letter-spacing: -0.13px;
+  text-transform: capitalize;
+  border: 0;
+
+  &:hover,
+  &:focus {
+    border: 0 !important;
+  }
+}
+
+td .status.confirmed {
+  background-color: #f5fff7;
+  color: #1ea83c;
+}
+
+td .status.partial {
+  background-color: rgba(62, 81, 255, 0.06);
+  color: #3e51ff;
+}
+
+.d_data table td.paid {
+  color: #1ea83c;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: -0.56px;
+}
+
+.d_container.full_width {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  .d_inner_content {
+    padding: 32px 20px 32px;
+    width: 100%;
+  }
+}
+
+.left_col,
+.right_col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.listing_form.step_5 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dashboard .modal-dialog {
+  width: 100vw;
+
+  .modal-content {
+    background: #f9f9f9;
+    padding: 20px;
+
+    form {
+      background: #fff;
+      padding: 24px;
+      gap: 16px;
+
+      button {
+        padding: 14px 16px;
+      }
+    }
+
+    .modal-header {
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+      border-bottom: 1px dashed #d6d6d6;
+    }
+
+    .form_control {
+      width: 100%;
+      gap: 4px;
+
+      label {
+        color: var(--darkText);
+        font-family: Inter;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 19.2px; /* 137.143% */
+        letter-spacing: -0.28px;
+      }
+
+      input,
+      select,
+      textarea {
+        padding: 12px 16px;
+        border-radius: 10px;
+        border: 1px solid rgba(172, 181, 197, 0.13);
+        background-color: rgba(238, 239, 242, 0.4);
+
+        color: var(--darkText);
+        font-family: Inter;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.14px;
+
+        &:hover,
+        &:focus {
+          border: 1px solid #97a2ff;
+        }
+      }
+    }
+
+    .radio_button {
+      input {
+        display: none;
+      }
+      label {
+        display: flex;
+        padding: 10px 14px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        background: #f8f9fa;
+        cursor: pointer;
+        border: 1px solid transparent;
+        color: var(--darkText);
+        font-family: Inter;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: -0.28px;
+
+        &:hover {
+          border-color: #97a2ff;
+        }
+      }
+      input:checked + label {
+        background: #dfeeff;
+      }
+    }
+
+    .multi_item {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 4px;
+    }
+
+    .check_box {
+      flex-direction: row;
+      justify-content: space-between;
+
+      input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+        border: 1px solid rgba(172, 181, 197, 0.4);
+        background: rgba(238, 239, 242, 0.4);
+      }
+    }
+  }
+}
+
+.homv_contact {
+  .btn_group {
+    flex-wrap: nowrap;
+  }
+}
+
+// **************************** Dashboard Page Styling Start ****************************
+@import "dashboard";
+// **************************** Dashboard Page Styling End ****************************
+
+// **************************** Tenant Database Page Styling Start ****************************
+@import "tenant-database";
+// **************************** Tenant Database Page Styling End ****************************
+
+// **************************** Listed Property Page Styling Start ****************************
+@import "listed-property";
+// **************************** Listed Property Page Styling End ****************************
+
+// **************************** Account Page Styling Start ****************************
+@import "account";
+// **************************** Account Page Styling End ****************************
+
+// **************************** Booking Schedule Page Styling Start ****************************
+@import "booking-schedule";
+// **************************** Booking Schedule Page Styling End ****************************
+
+// **************************** Property Listing ALl Steps Page Styling Start ****************************
+@import "property-listing";
+// **************************** Property Listing ALl Steps Page Styling End ****************************
+
+// **************************** Property Listing Pricing Page Styling Start ****************************
+@import "pricing";
+// **************************** Property Listing Pricing Page Styling End ****************************
+
+// **************************** Dashboard Responsive ALl Steps Page Styling Start ****************************
+@import "dash-responsive";
+// **************************** Dashboard Responsive ALl Steps Page Styling End ****************************

@@ -1,0 +1,196 @@
+.profile_image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 32px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.account_settings {
+  h4 {
+    color: var(--darkText);
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+    letter-spacing: -0.64px;
+    margin-bottom: 16px;
+  }
+
+  .acc_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    p.label {
+      color: #6f7386;
+      font-family: Inter;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16.8px; /* 120% */
+      letter-spacing: -0.14px;
+      margin-bottom: 2px;
+    }
+
+    p.value {
+      color: #acb5c5;
+      font-family: Inter;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16.8px; /* 120% */
+      letter-spacing: -0.14px;
+    }
+
+    p.green {
+      color: #1ea83c;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 16.8px; /* 120% */
+      letter-spacing: -0.14px;
+      cursor: pointer;
+    }
+  }
+
+  .password,
+  .phone {
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #d6d6d6;
+  }
+
+  .logout {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #f44157;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.42px;
+  }
+}
+
+nav.second_navbar {
+  padding: 0;
+  ul li {
+    width: 100%;
+  }
+
+  ul {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 14px 20px;
+  }
+
+  ul .d_account_img {
+    width: fit-content;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 30px 36px 36px 30px;
+    background: #eaf3ff;
+    padding-right: 8px;
+
+    .img,
+    .image {
+      width: 44px;
+      height: 44px;
+    }
+
+    .text {
+      color: var(--darkText);
+      font-family: Inter;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.64px;
+      gap: 8px;
+      display: flex;
+      align-items: center;
+
+      .dropdown_icon {
+        display: flex;
+      }
+    }
+  }
+
+  li:last-child {
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+  ul {
+    .call_us {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+
+      color: var(--darkText);
+      font-family: Inter;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.64px;
+      text-decoration-line: underline;
+
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.full_width {
+  .account_settings .password,
+  .account_settings .phone {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .profile_image_sec {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    border-bottom: 1px dashed #d6d6d6;
+  }
+
+  .profile_image {
+    margin: 0;
+  }
+}
+
+.profile_sec {
+  display: flex;
+  width: 100%;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px dashed #d6d6d6;
+
+  > div {
+    width: 100%;
+  }
+
+  .acc_seting_info {
+    padding-right: 40px;
+    border-right: 1px dashed #d6d6d6;
+  }
+  .personal_info {
+    padding-left: 40px;
+  }
+}

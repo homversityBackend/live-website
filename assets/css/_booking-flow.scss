@@ -1,0 +1,804 @@
+.booking_flow {
+  .step_wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+    .step {
+      width: 100vw;
+      max-width: 120px;
+      height: 4px;
+      border-radius: 10px;
+      background: #dadee7;
+    }
+
+    .step.active {
+      background: var(--primaryColor);
+    }
+  }
+
+  .book_prev {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    margin-bottom: 40px;
+
+    color: var(--darkText);
+    font-family: Inter;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28.8px; /* 120% */
+    letter-spacing: -0.72px;
+    transition: 0.3s;
+
+    .icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid #e8e9eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+    }
+
+    svg {
+      transition: 0.3s;
+    }
+
+    &:hover {
+      color: var(--primaryColor);
+
+      .icon {
+        border-color: var(--primaryColor);
+      }
+
+      svg {
+        fill: var(--primaryColor);
+      }
+    }
+  }
+
+  .booking_filters {
+    display: flex;
+    justify-content: center;
+
+    form {
+      .parent_dropdown {
+        display: flex;
+        align-items: center;
+        gap: 37px;
+
+        .label {
+          color: var(--darkText);
+          font-family: Inter;
+          font-size: 1.4rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: -0.28px;
+          margin-bottom: 6px;
+        }
+      }
+    }
+  }
+
+  .filter_occupancy {
+    width: 100vw;
+    max-width: 193px;
+    button {
+      width: 100%;
+    }
+  }
+
+  .container.room_select {
+    max-width: 635px;
+  }
+
+  .breadcumb.link_path {
+    margin: 24px 0 36px;
+  }
+
+  .info_room {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  p.info_desc {
+    color: #4b6475;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.42px;
+    margin: 8px 0 24px;
+  }
+
+  .info_filtered {
+    display: flex;
+    padding: 6px 16px;
+    align-items: center;
+    border-radius: 24px;
+    background: #f0f1ff;
+    gap: 6px;
+    margin-bottom: 16px;
+
+    li {
+      color: var(--primaryColor);
+      text-align: center;
+      font-family: Inter;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.36px;
+    }
+    .dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--primaryColor);
+    }
+  }
+
+  .info_price {
+    color: var(--darkText);
+    text-align: center;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.8px;
+    margin-bottom: 24px;
+  }
+
+  .info_room_list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+
+    .room_list {
+      padding: 13px 22px;
+      color: #1ea83c;
+      text-align: center;
+      font-family: Inter;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      outline: 0;
+      border-radius: 8px;
+      border: 1px solid #1ea83c;
+      background: #fff;
+      transition: 0.3s;
+
+      &:hover {
+        background: rgba(30, 168, 60, 0.1);
+      }
+    }
+
+    .booked {
+      border: 1px solid #acb5c5;
+      background: #fff !important;
+      color: #acb5c5;
+      cursor: not-allowed;
+    }
+
+    .selected {
+      background: #1ea83c !important;
+      color: #fff;
+    }
+  }
+
+  .continue {
+    padding: 16px;
+    height: unset;
+    border-radius: 100px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -0.32px;
+    width: fit-content;
+    margin: 40px auto 40px;
+
+    span {
+      margin-right: 8px;
+    }
+  }
+
+  footer {
+    border-top: 1px solid #f4f8ff;
+    background: #f7f7f8;
+    padding: 8px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 8px;
+      color: var(--darkText);
+      font-family: Inter;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.28px;
+    }
+
+    .color_box {
+      width: 17px;
+      height: 17px;
+      border-radius: 2px;
+      background: #1ea83c;
+    }
+
+    .booked_color {
+      border: 1px solid #c6c6c6;
+      background: #f7f7f7;
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 6px;
+
+    thead {
+      background-color: #f1faff;
+      border-radius: 6px;
+
+      th {
+        padding: 12px 12px !important;
+        // Sharing
+        color: #495a63;
+        font-size: 1.6rem;
+        font-family: Inter;
+        font-weight: 500;
+        line-height: 19.2px;
+        word-wrap: break-word;
+
+        &:nth-child(1) {
+          border-top-left-radius: 8px;
+          border-bottom-left-radius: 8px;
+        }
+        &:last-child {
+          border-top-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+        }
+      }
+    }
+    tbody {
+      tr {
+        border: 0;
+        margin: 0;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        td {
+          padding: 17px 12px;
+          // ₹12,000
+          color: #3a3b4f;
+          font-size: 1.6rem;
+          font-family: Inter;
+          font-weight: 500;
+          line-height: 28.8px;
+          word-wrap: break-word;
+          transition: 0.3s;
+          background: #f9f9f9;
+
+          input {
+            width: 16px;
+            height: 16px;
+          }
+
+          &:first-child {
+            padding-left: 20px;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+          }
+          &:last-child {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+          }
+        }
+
+        &:hover td {
+          background: #f3f3f3;
+        }
+
+        &.selected {
+          box-shadow: 0 0 0 1px var(--primaryColor);
+          td {
+            color: var(--primaryColor);
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .price_table {
+    width: 100%;
+  }
+
+  .info_personal {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  .form_control {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    input {
+      padding: 12px 16px;
+      border-radius: 10px;
+      border: 1px solid #acb5c5;
+      background: #fff;
+      outline: 0;
+      color: var(--darkText);
+      width: 100%;
+      font-family: Inter;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.16px;
+      transition: 0.3s;
+
+      &:hover {
+        border: 1px solid var(--primaryColor);
+      }
+      &:focus {
+        border: 1px solid var(--primaryColor);
+      }
+    }
+
+    .input_group {
+      position: relative;
+
+      select {
+        position: absolute;
+        border: 0;
+        background: transparent;
+        padding: 12px 6px 12px 16px;
+        width: fit-content;
+        color: var(--darkText);
+        font-family: Inter;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.16px;
+      }
+
+      input {
+        padding-left: 80px;
+      }
+    }
+  }
+
+  .bill_info {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 56px;
+
+    .info_banner {
+      width: 50%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    p {
+      text-align: left;
+      color: #4b6475;
+      font-family: Inter;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 22.5px */
+      letter-spacing: -0.3px;
+      margin: 0;
+    }
+
+    h4 {
+      color: var(--darkText);
+      font-family: Inter;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%; /* 30px */
+      letter-spacing: -0.6px;
+      margin-bottom: 6px;
+    }
+
+    .store_btn {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-top: 20px;
+      a {
+        width: calc(50% - 4px);
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .payment_details {
+    h4 {
+      color: var(--darkText);
+      font-family: Inter;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%; /* 24px */
+      letter-spacing: -0.48px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .payment_list {
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px dashed #e8e9eb;
+    background: #f7f7f8;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    li {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      span:first-child {
+        color: #4b6475;
+        font-family: Inter;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 24px */
+        letter-spacing: -0.32px;
+      }
+
+      span:last-child {
+        text-align: right;
+      }
+
+      .price {
+        color: #3a3b4f;
+        font-family: Inter;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 24px */
+        letter-spacing: -0.48px;
+      }
+
+      .saving {
+        color: #21a36d;
+      }
+
+      .total {
+        color: #3d5fea !important;
+      }
+
+      &:last-child {
+        margin-top: 4px;
+        border-top: 1px dashed #d6d6d6;
+        padding-top: 16px;
+      }
+
+      button {
+        color: #f44157;
+        font-size: 16px;
+        font-style: normal;
+        text-align: right;
+        font-weight: 600;
+        line-height: 150%; /* 24px */
+        letter-spacing: -0.48px;
+        border: 0;
+        background: transparent;
+        outline: 0;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .coupon_container {
+    position: relative;
+    text-align: right;
+
+    .coupon_wrapper {
+      text-align: left;
+      position: absolute;
+      display: flex;
+      padding: 12px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      width: 100vw;
+      max-width: 367px;
+      border-radius: 12px;
+      background: #f7f7f8;
+      top: -40px;
+      left: calc(100% + 44px);
+      transition: 0.2s;
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+      transform: translateX(-20px);
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-right: 16px solid #f7f7f8;
+        border-bottom: 10px solid transparent;
+        right: 100%;
+        top: 45px;
+      }
+    }
+
+    .coupon_wrapper.show {
+      opacity: 1;
+      pointer-events: unset;
+      visibility: visible;
+      transform: translateX(0px);
+    }
+
+    .wrapper_head {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h3 {
+        color: var(--darkText);
+        font-family: Inter;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 24px */
+        letter-spacing: -0.48px;
+      }
+
+      .close {
+        cursor: pointer;
+
+        svg {
+          transition: 0.2s;
+        }
+        &:hover {
+          svg {
+            fill: red;
+          }
+        }
+      }
+    }
+
+    .wrapper_body {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .coupon_card {
+      display: flex;
+      align-items: center;
+    }
+
+    .tag {
+      position: relative;
+      min-height: 118px;
+      min-width: 40px;
+      height: 100%;
+      background-image: url(../images/coupon_shape.svg);
+
+      p {
+        position: absolute;
+        color: #2b85ba;
+        font-family: Inter;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 24px */
+        letter-spacing: -0.8px;
+        text-transform: capitalize;
+        width: max-content;
+        top: 50%;
+        left: -10px;
+        transform: translateY(-50%) rotate(-90deg);
+      }
+    }
+
+    .content {
+      padding: 12px 8px 16px 12px;
+      border-radius: 0px 12px 12px 0px;
+      background: #f1faff;
+      width: 100%;
+    }
+
+    .cou_top {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+      border-bottom: 1px dashed #d9f1ff;
+    }
+
+    .name {
+      color: var(--darkText);
+      font-family: Inter;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 150%; /* 24px */
+      letter-spacing: -0.32px;
+      text-transform: capitalize;
+      margin-bottom: 4px;
+    }
+
+    .desc {
+      color: var(--darkText);
+      font-family: Inter;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.28px;
+    }
+
+    .btn {
+      display: inline-flex;
+      padding: 8px 10px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 20px;
+      background: #fff;
+      color: var(--darkText);
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.14px;
+      text-decoration: none;
+
+      &:hover {
+        background: #ffeff1;
+      }
+    }
+
+    .btn.applied {
+      background-color: #f44157;
+      color: #fff;
+    }
+
+    .save {
+      color: #4b6475;
+      font-family: Inter;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.28px;
+    }
+  }
+  .payment_list li.applied_coupon {
+    width: 100%;
+    display: flex;
+
+    .coupon_wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px dashed #d6d6d6;
+      background: linear-gradient(
+        85deg,
+        rgba(255, 242, 170, 0.5) 0%,
+        rgba(244, 244, 244, 0.5) 0.01%,
+        rgba(238, 238, 238, 0.5) 98.02%
+      );
+      backdrop-filter: blur(100px);
+    }
+    .name {
+      color: rgba(0, 0, 0, 0.8);
+      font-family: Inter;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 19.2px; /* 120% */
+      letter-spacing: -0.32px;
+      margin-bottom: 4px;
+    }
+
+    .coupon {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      img {
+        width: 16px;
+      }
+
+      color: rgba(0, 0, 0, 0.8);
+      font-family: Inter;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16.8px;
+      letter-spacing: -0.28px;
+    }
+
+    .red {
+      color: #f44157;
+    }
+
+    .remove {
+      color: #f44157;
+      font-family: Inter;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 32px; /* 228.571% */
+      letter-spacing: -0.28px;
+      cursor: pointer;
+    }
+  }
+}
+
+.room_selection_term {
+  .container.room_select {
+    max-width: 755px;
+  }
+}
+
+.fill_details {
+  .container.room_select {
+    max-width: 460px;
+  }
+}
+.bill_details {
+  .container.room_select {
+    max-width: 560px;
+  }
+
+  .continue.btn_primary {
+    width: 100%;
+  }
+}

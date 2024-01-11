@@ -1,0 +1,107 @@
+.full_width {
+  .d_data {
+    margin-top: 32px;
+  }
+}
+
+.booking_card,
+.wish_card {
+  h3 {
+    margin: 8px 0 2px;
+  }
+
+  .footer_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 6px;
+    border-top: 1px dashed #d6d6d6;
+  }
+
+  .date {
+    .label {
+      color: rgba(86, 92, 116, 0.8);
+      font-family: Inter;
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.12px;
+    }
+
+    .value {
+      color: var(--darkText);
+      font-family: Inter;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 28.8px; /* 180% */
+      letter-spacing: -0.48px;
+
+      .grey {
+        color: #d6d6d6;
+      }
+    }
+  }
+
+  .button {
+    padding: 10px 12px;
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    outline: 0 !important;
+    border: 0 !important;
+    border-radius: 100px;
+  }
+
+  .button.booked_btn {
+    background: #1ea83c;
+  }
+  .button.schedule_btn {
+    background: var(--primaryColor);
+  }
+
+  .can_schedule_btn {
+    width: 100%;
+    color: var(--primaryColor);
+    background-color: #fff;
+    border: 1px solid #d7dbff !important;
+    margin-top: 12px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 9px 16px;
+  }
+
+  .coupon {
+    display: flex;
+    gap: 6px;
+    margin-top: 12px;
+    align-items: center;
+
+    .icon {
+      min-width: 24px;
+      min-height: 24px;
+    }
+
+    p {
+      color: #f44157;
+      font-family: Inter;
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 14.4px; /* 120% */
+      letter-spacing: -0.12px;
+    }
+  }
+}
+
+.wishlist {
+  .d_data {
+    margin-top: 0;
+  }
+}

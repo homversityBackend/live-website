@@ -1,0 +1,459 @@
+.career_page,
+.about_page,
+.blog_page,
+.faq_page,
+.contact_page {
+  .career_hero {
+    background: #dfeeff;
+    min-height: 562px;
+    padding: 60px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .info {
+      max-width: 854px;
+      margin: 0 auto;
+    }
+  }
+
+  .subtitle {
+    color: var(--darkText);
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .title {
+    color: var(--darkText);
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.92px;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    color: var(--darkText);
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+    letter-spacing: -0.36px;
+  }
+
+  .top {
+    text-align: center;
+  }
+
+  .jobs {
+    .top {
+      text-align: center;
+    }
+    margin-top: 100px;
+
+    form {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      max-width: 636px;
+      margin: 0 auto;
+    }
+
+    .form_control {
+      position: relative;
+      width: 100%;
+
+      .icon {
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &:last-child {
+        max-width: 180px;
+
+        select {
+          color: var(--darkText);
+          font-family: Inter;
+          font-size: 1.6rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 18px; /* 112.5% */
+          letter-spacing: -0.32px;
+
+          display: flex;
+          padding: 13px 16px;
+          justify-content: space-between;
+          align-items: center;
+
+          border-radius: 12px;
+          border: 1px solid #c4cbd8;
+        }
+      }
+    }
+
+    .jobs_cards {
+      margin-top: 60px;
+      margin-bottom: 200px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .item {
+      border-radius: 32px;
+      background: #eeeff2;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      h3 {
+        color: var(--darkText);
+        font-family: Inter;
+        font-size: 2.8rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 29.8px; /* 106.429% */
+        letter-spacing: -0.84px;
+      }
+
+      .location {
+        color: #4b6475;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px; /* 177.778% */
+        letter-spacing: -0.36px;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--darkText);
+        text-align: center;
+        font-family: Inter;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 21.6px; /* 120% */
+        letter-spacing: -0.36px;
+        justify-content: center;
+        border-radius: 30px;
+        background: #fff;
+        padding: 10px 16px;
+        transition: 0.3s;
+        svg {
+          fill: var(--darkText);
+          transition: 0.3s;
+        }
+
+        &:hover {
+          background: var(--primaryColor);
+          color: #fff;
+
+          svg {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.career_page {
+  nav.navbar {
+    box-shadow: none;
+    background: #dfeeff;
+
+    .btn_grey {
+      background: #fff;
+    }
+  }
+
+  .jobs .container {
+    max-width: 1024px;
+  }
+}
+
+.about_page {
+  position: relative;
+  isolation: isolate;
+
+  .about_hero {
+    padding: 168px 0 129px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .info {
+      max-width: 834px;
+      margin: 0 auto;
+    }
+  }
+
+  .shape {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  .banner {
+    margin-bottom: 200px;
+    .container {
+      max-width: 1110px;
+    }
+  }
+}
+
+.blog_page {
+  .jobs {
+    .container {
+      max-width: 960px;
+    }
+  }
+
+  .jobs .item {
+    border-radius: 24px;
+    background: #f7f7f8;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    .post_thumbnail {
+      height: 230px;
+      border-radius: 24px 24px 0px 0px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 24px 24px 0px 0px;
+      }
+    }
+
+    .post_content {
+      padding: 16px;
+    }
+
+    h4 {
+      color: var(--darkText);
+      font-family: Inter;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 20.8px; /* 130% */
+      letter-spacing: -0.48px;
+      margin-bottom: 4px;
+    }
+    p {
+      color: #4b6475;
+      font-family: Inter;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 23.4px; /* 167.143% */
+      letter-spacing: -0.14px;
+    }
+  }
+}
+
+.faq_page {
+  .faq_info {
+    position: relative;
+    isolation: isolate;
+    padding: 120px 0 200px;
+
+    .top {
+      margin-bottom: 80px;
+    }
+    .container {
+      max-width: 821px;
+    }
+  }
+
+  .shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .accordion {
+    width: 100%;
+
+    .accordion-item {
+      border-bottom: 1px solid #e8e9eb;
+      background: transparent;
+    }
+
+    h2 .accordion-button {
+      color: var(--darkText);
+      font-family: Inter;
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 20.8px; /* 130% */
+      letter-spacing: -0.64px;
+      background: transparent;
+      display: flex;
+      padding: 24px 12px;
+      justify-content: space-between;
+      align-items: center;
+      outline: 0;
+      box-shadow: none;
+    }
+
+    .accordion-button::after {
+      width: 20px;
+      margin-left: 20px;
+    }
+
+    .accordion-body {
+      color: #4b6475;
+      font-family: Inter;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 175% */
+      letter-spacing: -0.32px;
+      padding-top: 0;
+      padding-bottom: 24px;
+    }
+  }
+}
+
+.contact_page {
+  .contact_info {
+    position: relative;
+    isolation: isolate;
+    padding: 168px 0 200px;
+
+    .top {
+      margin-bottom: 80px;
+    }
+
+    .container {
+      max-width: 820px;
+    }
+  }
+
+  .shape {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  .contact_cards {
+    display: flex;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(314px, 1fr));
+
+    .card {
+      gap: 16px;
+      padding: 48px 36px;
+      border-radius: 32px;
+      background: #f7f7f8;
+      border: 0;
+    }
+
+    h4 {
+      color: var(--darkText);
+      font-family: Inter;
+      font-size: 2.8rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 29.8px; /* 106.429% */
+      letter-spacing: -0.84px;
+    }
+
+    p {
+      max-width: 290px;
+      color: #4b6475;
+      font-family: Inter;
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 32px; /* 177.778% */
+      letter-spacing: -0.36px;
+    }
+  }
+}
+
+.main .container_small {
+  max-width: 820px;
+}
+
+.privacy_page {
+  .section_title {
+    color: var(--darkText);
+    font-family: Inter;
+    font-size: 7.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -2.16px;
+    padding: 120px 0;
+    text-align: center;
+  }
+
+  .privacy_details ul {
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    li {
+      list-style: disc;
+    }
+  }
+
+  p,
+  li {
+    color: var(--darkText);
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    letter-spacing: -0.32px;
+  }
+
+  h3 {
+    color: var(--darkText);
+    font-family: Inter;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29.8px; /* 124.167% */
+    letter-spacing: -0.72px;
+    margin-bottom: 24px;
+  }
+
+  .privacy_details {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding-bottom: 200px;
+  }
+}

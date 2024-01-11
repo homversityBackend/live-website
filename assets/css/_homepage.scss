@@ -1,0 +1,828 @@
+.home_page {
+  width: 100%;
+
+  .container.cont_big {
+    max-width: 1340px;
+  }
+  .container.cont_small {
+    max-width: 1080px;
+  }
+}
+
+/* *************** Hero Slider Section Start *************** */
+.hero_slider {
+  position: relative;
+  isolation: isolate;
+  margin-bottom: 100px;
+
+  .hero_shape {
+    position: absolute;
+    width: 50%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .hero_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding-top: 140px;
+  }
+
+  .hero_title {
+    position: relative;
+    color: #00022c;
+    font-family: Inter;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px; /* 120% */
+    letter-spacing: -1.8px;
+
+    .icon {
+      //   position: absolute;
+      width: 75px;
+      height: 75px;
+    }
+  }
+
+  p.desc {
+    color: var(--darkText);
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.36px;
+  }
+
+  .down_info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+
+    color: var(--darkText);
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.32px;
+  }
+}
+/* *************** Hero Slider Section End *************** */
+
+/* *************** Scan Number Section Start *************** */
+.counter_up {
+  width: 100%;
+  margin-bottom: 136px;
+
+  .counter_content {
+    padding: 50px;
+    border-radius: 32px;
+    border: 1px solid #aad5ed;
+    background: #f1faff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 52px;
+    text-align: center;
+    color: #fff;
+  }
+
+  h5 {
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    color: #474d59;
+  }
+
+  h2 {
+    color: #00022c;
+    font-family: Inter;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 43.2px; /* 120% */
+    letter-spacing: -1.44px;
+  }
+
+  .counter {
+    display: flex;
+    align-items: center;
+  }
+
+  .count {
+    padding: 0 95px;
+    border-width: 0 1px 0 1px;
+    border-style: dashed;
+    border-color: #c9c9c9;
+
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+      border: 0;
+    }
+
+    .number {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: Inter;
+      font-size: 3.2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -1.6px;
+      color: var(--primaryColor);
+
+      .icon {
+        min-width: 40px;
+      }
+    }
+
+    p {
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.48px;
+      margin-top: 8px;
+      color: #474d59;
+    }
+  }
+}
+/* *************** Scan Number Section End *************** */
+
+/* *************** Step Booking Section Start *************** */
+.step_booking {
+  margin-bottom: 136px;
+  .step_book_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+  }
+
+  h5 {
+    color: #474d59;
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  h2 {
+    color: #00022c;
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.92px;
+    margin-bottom: 24px;
+  }
+
+  li {
+    color: #474d59;
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+    letter-spacing: -0.32px;
+    list-style: auto;
+  }
+
+  .btn_primary {
+    height: 48px;
+    border-radius: 60px;
+    width: fit-content;
+    padding: 16px 20px;
+    margin-top: 40px;
+  }
+}
+/* *************** Step Booking Section End *************** */
+
+/* *************** Homv Introduction Section Start *************** */
+.introduction_homv {
+  .step_book_content {
+    .left {
+      grid-column: 2/3;
+    }
+    .right {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+  }
+
+  h2 {
+    position: relative;
+  }
+
+  h2 .new {
+    position: absolute;
+    color: #fff;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.8px;
+    border-radius: 6px;
+    background: #2c7929;
+    transform: rotate(-20deg);
+    padding: 4px 9px;
+    left: 45%;
+    top: 12px;
+  }
+}
+/* *************** Homv Introduction Section End *************** */
+
+/* *************** App Section Start *************** */
+.app_section {
+  .content {
+    border-radius: 32px;
+    background: #f7f6f2;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+  }
+
+  h2 {
+    color: #00022c;
+    font-family: Inter;
+    font-size: 4.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.76px;
+    margin-bottom: 32px;
+
+    .badge {
+      display: inline-block;
+      transform: translateY(-18px) rotate(-12.831deg);
+      padding: 10px 16px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 30px;
+      background: #a4deff;
+      color: #094463;
+      font-family: Inter;
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 0;
+    }
+  }
+
+  .desc_group {
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+    margin-bottom: 102px;
+
+    .sec {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .icon {
+      width: 40px;
+      height: 40px;
+    }
+
+    h4 {
+      color: #00022c;
+      font-family: Inter;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px; /* 120% */
+      letter-spacing: -0.6px;
+      margin-bottom: 12px;
+    }
+    p {
+      color: #474d59;
+      font-family: Inter;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 25.2px; /* 157.5% */
+      letter-spacing: -0.32px;
+    }
+  }
+
+  .store_btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    a {
+      width: 160px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+/* *************** App Section End *************** */
+
+/* *************** Featured Section Start *************** */
+.feature_on {
+  margin-top: 100px;
+  margin-bottom: 128px;
+
+  h2 {
+    color: #00022c;
+    font-family: Inter;
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.92px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    border-radius: 36px;
+    background: #f9f9f9;
+    padding: 60px;
+    gap: 100px;
+
+    .image {
+      height: 52px;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
+/* *************** Featured Section End *************** */
+
+/* *************** Buddies App Section Start *************** */
+.buddies_app {
+  margin-bottom: 125px;
+  .right {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  h2 .badge {
+    color: #004800;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: #bcffa4;
+  }
+}
+/* *************** Buddies App Section End *************** */
+
+/* *************** Customer Review Section Start *************** */
+.customer_review {
+  margin-bottom: 100px;
+
+  .review_content {
+    position: relative;
+  }
+
+  h2 {
+    color: #00022c;
+    font-family: Inter;
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.92px;
+    margin-bottom: 70px;
+  }
+
+  .item {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+
+    .review_text {
+      padding: 32px;
+      background: #f1f2f5;
+      border-radius: 32px;
+      position: relative;
+
+      p {
+        color: #3a3b4f;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; /* 162.5% */
+        letter-spacing: -0.32px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .image {
+      width: 60px;
+      height: 60px;
+      position: relative;
+      border-radius: 50%;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: calc(100% + 6px);
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 16px solid transparent;
+        border-right: 16px solid transparent;
+        border-top: 26px solid #f1f2f5;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+        border-radius: 50%;
+      }
+    }
+
+    h5 {
+      color: var(--darkText);
+      font-family: Inter;
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 21.6px; /* 120% */
+      letter-spacing: -0.54px;
+      margin-bottom: 4px;
+    }
+    h6 {
+      color: var(--darkText);
+      font-family: Inter;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16.8px; /* 105% */
+      letter-spacing: -0.32px;
+    }
+  }
+
+  .owl-carousel {
+    position: static;
+    .owl-nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      position: absolute;
+      margin: 0;
+      top: 16px;
+      right: 0;
+
+      button {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: #fff;
+        border: 1px solid #e8e9eb;
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--darkText);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+        margin: 0;
+        padding: 0;
+
+        &:hover {
+          background: var(--primaryColor);
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+/* *************** Customer Review Section End *************** */
+
+/* *************** Headline Section Start *************** */
+
+.headline {
+  margin-bottom: 128px;
+
+  .headline_content {
+    position: relative;
+    padding: 92px 50px 72px;
+    border-radius: 32px;
+    background: #f1faff;
+  }
+
+  h2 {
+    color: #00022c;
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.92px;
+    margin-bottom: 100px;
+    position: relative;
+    display: inline-block;
+
+    .icon {
+      position: absolute;
+      right: -16px;
+      top: 20px;
+    }
+  }
+
+  .owl-carousel {
+    position: static;
+    .owl-nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      position: absolute;
+      margin: 0;
+      top: 116px;
+      right: 50px;
+
+      button {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: transparent;
+        border: 1px solid #e8e9eb;
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--darkText);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+        margin: 0;
+        padding: 0;
+
+        &:hover {
+          background: var(--primaryColor);
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .owl-item {
+    padding-top: 32px;
+  }
+
+  .item {
+    padding: 28px;
+    border-radius: 32px;
+    background: #e2f5ff;
+
+    .image {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 33px;
+      margin-top: -60px;
+      border-radius: 50%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+        border-radius: 50%;
+      }
+    }
+
+    h3 {
+      color: #00022c;
+      font-family: Inter;
+      font-size: 2.4rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 32.8px; /* 136.667% */
+      letter-spacing: -0.72px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: #00022c;
+      font-family: Inter;
+      font-size: 1.8rem;
+      font-style: italic;
+      font-weight: 500;
+      line-height: 28px; /* 155.556% */
+      letter-spacing: -0.36px;
+      margin-bottom: 24px;
+    }
+
+    .date {
+      color: #00022c;
+      font-family: Inter;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px; /* 200% */
+      letter-spacing: -0.28px;
+      width: fit-content;
+      display: flex;
+      padding: 4px 14px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 0;
+      border-radius: 50px;
+      background: #fff;
+    }
+  }
+}
+/* *************** Headline Section End *************** */
+
+/* *************** Institute Section Start *************** */
+.institute {
+  margin-bottom: 128px;
+
+  .heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+    justify-content: center;
+    margin-bottom: 90px;
+
+    h2,
+    select {
+      color: #00022c;
+      font-family: Inter;
+      font-size: 4.8rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -1.92px;
+    }
+
+    select {
+      width: fit-content;
+      padding: 0;
+      border: 0 !important;
+      padding-right: 20px;
+      border-radius: 0;
+      color: var(--primaryColor);
+
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background: transparent;
+      background-image: url("../images/drop_arrow.svg");
+      background-repeat: no-repeat;
+      background-position-x: 100%;
+      background-position-y: 28px;
+      background-size: 20px;
+
+      option {
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.32px;
+        color: var(--darkText);
+      }
+    }
+  }
+
+  .all_item {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(244px, 1fr));
+    justify-content: center;
+    align-items: center;
+
+    .image {
+      width: 100%;
+      height: 244px;
+      border-radius: 32px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 32px;
+      }
+    }
+
+    h4 {
+      color: #00022c;
+      font-family: Inter;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 32px; /* 160% */
+      letter-spacing: -0.6px;
+      margin-top: 12px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+/* *************** Institute Section End *************** */
+
+/* *************** Download Section Start *************** */
+.download {
+  width: 100%;
+  margin-bottom: 240px;
+
+  .content {
+    padding: 50px;
+    padding-bottom: 0;
+    border-radius: 32px;
+    background: #f1faff;
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: 6fr 4fr;
+    gap: 30px;
+
+    h2 {
+      color: #00022c;
+      font-family: Inter;
+      font-size: 4.8rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -1.92px;
+      position: relative;
+      margin-bottom: 121px;
+
+      .text {
+        height: 43px;
+        display: inline-block;
+        transform: translateY(-3px);
+
+        img {
+          height: 100%;
+        }
+      }
+
+      .icon {
+        width: 84px;
+        height: 84px;
+        display: inline-block;
+        position: absolute;
+        top: 100%;
+        right: 14%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .download_btn {
+      display: flex;
+      align-items: center;
+      padding-bottom: 40px;
+      gap: 20px;
+
+      a {
+        width: 180px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+/* *************** Download Section End *************** */
